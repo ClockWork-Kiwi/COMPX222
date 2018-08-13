@@ -1,0 +1,54 @@
+/* DODGER BLUE WILL BE THE BLUE COLOUR AND DARK ORANGE WILL BE THE ORANGE COLOUR */
+
+body
+{
+	background-color: bisque;
+	font-family: "Arial";
+	font-size: 30px;	
+}
+
+.logo
+{
+	display: inline-block;
+	width: 135px;
+	height: 100px;	
+}
+
+.title
+{
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.navbar
+{
+	border-style: solid;
+	border-width: 2px;
+	list-style-type: none;
+	background-color: dodgerBlue;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;	
+	height: 50px;	
+	text-align: center;
+}
+
+.navItem
+{
+	display: inline;
+}
+
+.link
+{
+	
+	color: white;
+	padding-right: 10%;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+.link:hover 
+{
+	color: DarkOrange;
+}
+
