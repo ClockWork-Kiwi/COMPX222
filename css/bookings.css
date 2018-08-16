@@ -1,0 +1,44 @@
+.inputField
+{
+    margin-left: 43%;
+    text-align: left;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 15%;
+}
+
+.excluded
+{
+    margin-left: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+h1
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.hiddenMessage
+{
+    margin-left: 39%;
+    display: none;
+    color: blue;
+}
+
+input:focus + .hiddenMessage
+{
+    display: block;
+}
+
+.timeArrival
+{
+    display: none;
+}
+
+.button
+{
+    text-align: center;
+}

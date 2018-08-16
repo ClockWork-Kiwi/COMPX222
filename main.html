@@ -2,28 +2,79 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="javascript/slideShowFunctions.js"></script>
 	</head>
 
 	<body>
-		<!–– TnavItems is the logo and the title -->
-		<div>
-			<a href="main.html"><img src="logo.png" class="logo"></a>
-			<h1 class="title">Stop'n'Stay</h1>			
-		</div>
-		
-		<!–– TnavItems is the navigation bar -->
-		<div>
-			<ul class="navbar">
-				<li class="navItem"><a href="main.html" class="link">Home</a></li>
-				<li class="navItem"><a href="main.html" class="link">Room Types</a></li>
-				<li class="navItem"><a href="main.html" class="link">Booking</a></li>
-				<li class="navItem"><a href="main.html" class="link">About us</a></li>
-				<li class="navItem"><a href="main.html" class="link">Things to do</a></li>
-			</ul>
-		</div>
-		
+	<!–– This is the logo and the title -->
+	<div class="title">
+		<a href="main.html"><img src="images/logo.png" class="logo"></a>
+		<h1>Stop'n'Stay</h1>
+	</div>
 
+	<!–– This is the navigation bar -->
+	<div>
+		<ul class="navbar">
+			<li class="navItem"><a href="main.html" class="link">Home</a></li>
+			<li class="navItem"><a href="pages/roomTypes.html" class="link">Room Types</a></li>
+			<li class="navItem"><a href="pages/bookings.html" class="link">Booking</a></li>
+			<li class="navItem"><a href="pages/aboutUs.html" class="link">About us</a></li>
+			<li class="navItem"><a href="pages/thingsToDo.html" class="link">Things to do</a></li>
+		</ul>
+	</div>
+
+	<!-- This is the content section -->
+	<div class="content">
+
+		<!-- OVERVIEW -->
+		<div class="information">
+			<h1 class>
+				OVERVIEW
+			</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros nisi, placerat id luctus nec, aliquam sed nibh. Phasellus sagittis nunc ut risus blandit, id convallis urna blandit. Etiam mauris tortor, pellentesque in magna ac, tristique mollis sapien. Vestibulum mollis at tortor ut viverra. Nam ut elit ut sem placerat volutpat vitae id augue. Praesent a pulvinar orci, id faucibus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eu libero tempus, consectetur nisi non, imperdiet massa. Sed iaculis quis nisi in tincidunt. Mauris eu mi quis ipsum consectetur volutpat nec vitae mauris. Pellentesque metus arcu, fringilla sed ligula ut, euismod posuere ligula. Nullam eu orci a eros varius fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus dapibus, nisl id laoreet tincidunt, nisi lacus faucibus velit, in luctus urna ligula eu quam. Pellentesque feugiat tellus at quam ullamcorper rutrum. Integer non dui a lectus ultrices ornare non ultricies massa.
+			</p>
+		</div>
+
+		<!-- SLIDESHOW -->
+		<div class="slideshow">
+			<h1>
+				Our Rooms
+			</h1>
+			<!-- link: https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+
+			<img class="mySlides" src="images/basicDorm.jpg">
+			<img class="mySlides" src="images/mediumDorm.jpg" style="display: none;">
+			<img class="mySlides" src="images/goodDorm.jpeg" style="display: none;">
+			<button class="leftButton" onclick="changeIndex(-1)"> < </button>
+			<button class="rightButton" onclick="changeIndex(1)"> > </button>
+		</div>
+
+		<!-- SERVICES -->
+		<div class="information">
+		<h1>
+			SERVICES
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros nisi, placerat id luctus nec, aliquam sed nibh. Phasellus sagittis nunc ut risus blandit, id convallis urna blandit. Etiam mauris tortor, pellentesque in magna ac, tristique mollis sapien. Vestibulum mollis at tortor ut viverra. Nam ut elit ut sem placerat volutpat vitae id augue. Praesent a pulvinar orci, id faucibus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eu libero tempus, consectetur nisi non, imperdiet massa. Sed iaculis quis nisi in tincidunt. Mauris eu mi quis ipsum consectetur volutpat nec vitae mauris. Pellentesque metus arcu, fringilla sed ligula ut, euismod posuere ligula. Nullam eu orci a eros varius fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus dapibus, nisl id laoreet tincidunt, nisi lacus faucibus velit, in luctus urna ligula eu quam. Pellentesque feugiat tellus at quam ullamcorper rutrum. Integer non dui a lectus ultrices ornare non ultricies massa.
+		</p>
+
+		</div>
+
+		<!-- HOW TO REACH US -->
+
+		<div class="information">
+			<h1>
+				HOW TO REACH US
+			</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros nisi, placerat id luctus nec, aliquam sed nibh. Phasellus sagittis nunc ut risus blandit, id convallis urna blandit. Etiam mauris tortor, pellentesque in magna ac, tristique mollis sapien. Vestibulum mollis at tortor ut viverra. Nam ut elit ut sem placerat volutpat vitae id augue. Praesent a pulvinar orci, id faucibus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eu libero tempus, consectetur nisi non, imperdiet massa. Sed iaculis quis nisi in tincidunt. Mauris eu mi quis ipsum consectetur volutpat nec vitae mauris. Pellentesque metus arcu, fringilla sed ligula ut, euismod posuere ligula. Nullam eu orci a eros varius fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus dapibus, nisl id laoreet tincidunt, nisi lacus faucibus velit, in luctus urna ligula eu quam. Pellentesque feugiat tellus at quam ullamcorper rutrum. Integer non dui a lectus ultrices ornare non ultricies massa.
+			</p>
+
+		</div>
+	</div>
 	</body>
 
 </html> 
