@@ -154,12 +154,10 @@ function displayError(element, errorMessage)
 
 function removeError(element)
 {
-
-    if (element.nextSibling.tagName=="SPAN")
+    while (element.nextSibling.tagName=="SPAN")
     {
         var toRemove = element.nextSibling;
         toRemove.parentNode.removeChild(toRemove);
         element.style.border = "";
     }
-
 }

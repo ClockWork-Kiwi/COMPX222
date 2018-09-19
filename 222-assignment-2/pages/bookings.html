@@ -43,7 +43,7 @@
         </ul>
     </div>
 
-    <form action="POST">
+    <form method="GET" action="../php/booking.php">
         <div class="clientTitle">
             <h1>
                 Title
@@ -150,7 +150,7 @@
             <input type="checkbox" class="inputField excluded" id="breakfast" onchange="calculateCost()">
         </div>
         <div>
-            <button class="inputField button" onClick="showPayment()" type="button">Confirm Booking</button>
+            <button class="inputField button" onClick="showPayment()"> <!--- type="button" > --->  Confirm Booking</button>
             <button class="inputField button" type="reset">Reset</button>
         </div>
         <div class="paymentDiv inputField">
