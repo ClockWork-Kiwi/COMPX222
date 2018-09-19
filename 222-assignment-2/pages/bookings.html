@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>roomTypes</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../css/bookings.css">
+        <script type="text/javascript" src="../javascript/bookings.js"></script>
+    </head>
+
+    <body>
+    <div class="title">
+        <a href="../main.html"><img src="../images/logo.png" class="logo" alt="logo"></a>
+        <h1 class="title">Stop'n'Stay</h1>
+    </div>
+    <div>
+        <ul class="navbar">
+            <li class="navItem"><a href="../main.html" class="link">Home</a></li>
+            <li class="navItem">
+                <div class="dropdown link">
+                    <a href="roomTypes.html" class="dropDownTitle">Room Types</a>
+                    <div class="dropdown-content">
+                        <a href="roomTypes.html#studio">Studio</a>
+                        <a href="roomTypes.html#oneRoom">One Room</a>
+                        <a href="roomTypes.html#twoRoom">Two Room</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navItem"><a href="bookings.html" class="link">Booking</a></li>
+            <li class="navItem"><a href="aboutUs.html" class="link">About us</a></li>
+            <li class="navItem">
+                <div class="dropdown link">
+                    <a href="thingsToDo.html" class="dropDownTitle">Things To Do</a>
+                    <div class="dropdown-content">
+                        <a href="thingsToDo.html#gardens">Hamilton Gardens</a>
+                        <a href="thingsToDo.html#lake">Hamilton Lake</a>
+                        <a href="thingsToDo.html#base">The Base</a>
+                        <a href="thingsToDo.html#river">Waikato River</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <form action="POST">
+        <div class="clientTitle">
+            <h1>
+                Title
+            </h1>
+            <select class="inputField">
+                <option value="ms">Ms.</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+            </select>
+        </div>
+        <div class="firstName">
+            <h1>
+                First Name
+            </h1>
+            <input type="text" class="inputField" onblur="validationManager(this)">
+        </div>
+        <div class="lastName">
+            <h1>
+                Last Name
+            </h1>
+            <input type="text" class="inputField" onblur="validationManager(this)">
+        </div>
+        <div class="email">
+            <h1>
+                Email
+            </h1>
+            <input type="email" class="inputField" onblur="validationManager(this)">
+            <p class="hiddenMessage">Email must be correct as it will be used to send booking confirmation</p>
+        </div>
+        <div class="contactNumber">
+            <h1>
+                Contact Number
+            </h1>
+            <input type="text" class="inputField" onblur="validationManager(this)">
+        </div>
+        <div>
+            <h1>
+                Room Type
+            </h1>
+            <select id="roomType" class="inputField">
+                <option value="basicRoom">Studio</option>
+                <option value="mediumRoom">One Room</option>
+                <option value="goodRoom">Two Room</option>
+            </select>
+        </div>
+        <div>
+            <h1>
+                Number of Rooms
+            </h1>
+            <select id="numRooms" class="inputField">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+            </select>
+        </div>
+        <div>
+            <h1>
+                Number of Adults
+            </h1>
+            <select id="numAdults" class="inputField">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+            </select>
+        </div>
+        <div>
+            <h1>
+                Number of Children
+            </h1>
+            <select id="numChildren" class="inputField">
+                <option value="zero">0</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+            </select>
+        </div>
+        <div>
+            <h1>
+                Start Date
+            </h1>
+            <input type="date" id="startDay" class="inputField">
+        </div>
+        <div>
+            <h1>
+                End Date
+            </h1>
+            <input type="date" id="endDay" onchange="calculateCost()" class="inputField">
+        </div>
+        <div class="timeArrival" id="timeArrival">
+            <h1>
+                Estimated Time of Arrival
+            </h1>
+            <input type="time" class="inputField">
+        </div>
+        <div>
+            <h1 id="cost">
+                Cost:
+            </h1>
+        </div>
+        <div>
+            <h1>
+                Breakfast required? ($20 per person per day)
+            </h1>
+            <input type="checkbox" class="inputField excluded" id="breakfast" onchange="calculateCost()">
+        </div>
+        <div>
+            <button class="inputField button" onClick="showPayment()" type="button">Confirm Booking</button>
+            <button class="inputField button" type="reset">Reset</button>
+        </div>
+        <div class="paymentDiv inputField">
+
+            <p>Card Type</p>
+
+            <p>Card Number</p>
+
+            <p>CVV</p>
+            <p>Cardholder Name</p>
+            <button class="button" type="submit">Pay Now</button>
+            <button class="button" type="reset">Cancel</button>
+        </div>
+
+    </form>
+    </body>
+</html>
